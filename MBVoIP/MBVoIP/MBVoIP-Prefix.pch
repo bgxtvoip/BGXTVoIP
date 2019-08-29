@@ -1,0 +1,27 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+#define MB_XML_SUPPORT
+
+#define MB_MEDIA
+#define OS_IOS
+#define USE_ARES
+#define USE_IPV6
+#define BOOST_ALL_NO_LIB
+#define USE_SSL_NO
+#define ASIO_ENABLE_CANCELIO
+#define MB_OS_IOS
+
+//#define MB_APP_HTTP_SUPPORT
+#define MB_PROTOBUF_SUPPORT
+
+//#define MB_SMARTSEE_VOICE_MEDIA_ENGINE
+//#define TRIAL_LICENSE_AUDIO_LIMITATION
+//#define TRIAL_LICENSE_VIDEO_LIMITATION

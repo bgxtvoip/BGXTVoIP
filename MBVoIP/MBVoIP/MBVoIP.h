@@ -1,0 +1,34 @@
+#import <Foundation/Foundation.h>
+
+#import <MBVoIP/IMBEngineAdvanced.h>
+#import <MBVoIP/MediaEngine.h>
+#import <MBVoIP/MediaEngineEvent.h>
+#import <MBVoIP/MediaEngineDefine.h>
+#import <MBVoIP/MBConfig.h>
+#import <MBVoIP/MBDef.h>
+#import <MBVoIP/MediaEngineStatistic.h>
+#import <MBVoIP/MediaEngineAlternative.h>
+#import <MBVoIP/MediaEngineSetting.h>
+#import <MBVoIP/MediaEngineVideoDB.h>
+#import <MBVoIP/MediaEngineUtils.h>
+#import <MBVoIP/MBMediaConfManager.h>
+#import <MBVoIP/IMediaConf.h>
+#import <MBVoIP/IMediaParticipant.h>
+#import <MBVoIP/IParticipant.h>
+#import <MBVoIP/IMBConfDefs.h>
+#import <MBVoIP/IMediaVideoMixer.h>
+#import <MBVoIP/IMBVideoPool.h>
+#import <MBVoIP/IHostParticipant.h>
+#import <MBVoIP/IDataPresenceMixer.h>
+#import <MBVoIP/IMBConfManager.h>
+#import <MBVoIP/IMBCallsManager.h>
+#import <MBVoIP/IMBConfServiceManager.h>
+#import <MBVoIP/IMBVideoInDeviceManager.h>
+#import <MBVoIP/IMBVideoOutDeviceManager.h>
+#import <MBVoIP/MBLogger.h>
+#import <MBVoIP/MediaEngineLog.h>
+
+#import <MBVoIP/MBVoipClient.h>
+#import <MBVoIP/MBVoipClientAppDefs.h>
+#import <MBVoIP/MBVoipClientAppEvent.h>
+#import <MBVoIP/MBVoipClientDataStruct.h>
