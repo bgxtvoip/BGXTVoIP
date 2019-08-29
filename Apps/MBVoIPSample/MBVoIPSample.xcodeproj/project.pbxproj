@@ -27,6 +27,8 @@
 		A0E7FFB31C75BD4700C6C5C2 /* call_mute_on_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0E7FFAF1C75BD4700C6C5C2 /* call_mute_on_button@2x.png */; };
 		A502242618E3C5AB00426226 /* bnp_ci@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A502242518E3C5AB00426226 /* bnp_ci@2x.png */; };
 		DD8A3DD15EA5559E362F35F2 /* libPods-MBVoIPSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E29D72E50DFAB92AE7A3FDCC /* libPods-MBVoIPSample.a */; };
+		E25D4DD42317C2F400FCEAAD /* ContractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25D4DD22317C2F400FCEAAD /* ContractViewController.m */; };
+		E25D4DD52317C2F400FCEAAD /* ContractViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25D4DD32317C2F400FCEAAD /* ContractViewController.xib */; };
 		E29B033A2316D52B00E8C672 /* User.mm in Sources */ = {isa = PBXBuildFile; fileRef = E29B031E2316D52A00E8C672 /* User.mm */; };
 		E29B033B2316D52B00E8C672 /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29B03242316D52A00E8C672 /* InputViewController.xib */; };
 		E29B033C2316D52B00E8C672 /* MakeCallViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E29B03252316D52A00E8C672 /* MakeCallViewController.mm */; };
@@ -48,7 +50,6 @@
 		E3017E091859BEA7004222F3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3017E081859BEA7004222F3 /* CoreMedia.framework */; };
 		E3017E0B1859BEB3004222F3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3017E0A1859BEB3004222F3 /* OpenGLES.framework */; };
 		E3017E0D1859BEBD004222F3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3017E0C1859BEBD004222F3 /* QuartzCore.framework */; };
-		E30321EB19F79B4200D92E52 /* DialerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E30321EA19F79B4200D92E52 /* DialerViewController.mm */; };
 		E30CBDC31860279C008FB1F4 /* PickerViewTableViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = E30CBDB71860279C008FB1F4 /* PickerViewTableViewCell.mm */; };
 		E30CBDC51860279C008FB1F4 /* TextFieldTableViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = E30CBDBB1860279C008FB1F4 /* TextFieldTableViewCell.mm */; };
 		E320C05219D3B8F5008E9248 /* MBVideoInDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = E320C05119D3B8F5008E9248 /* MBVideoInDevice.mm */; };
@@ -116,6 +117,9 @@
 		A0E7FFAE1C75BD4700C6C5C2 /* call_mute_on_button_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_mute_on_button_highlighted@2x.png"; sourceTree = "<group>"; };
 		A0E7FFAF1C75BD4700C6C5C2 /* call_mute_on_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call_mute_on_button@2x.png"; sourceTree = "<group>"; };
 		A502242518E3C5AB00426226 /* bnp_ci@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bnp_ci@2x.png"; sourceTree = "<group>"; };
+		E25D4DD12317C2F400FCEAAD /* ContractViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContractViewController.h; sourceTree = "<group>"; };
+		E25D4DD22317C2F400FCEAAD /* ContractViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContractViewController.m; sourceTree = "<group>"; };
+		E25D4DD32317C2F400FCEAAD /* ContractViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractViewController.xib; sourceTree = "<group>"; };
 		E29B031E2316D52A00E8C672 /* User.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = User.mm; sourceTree = "<group>"; };
 		E29B031F2316D52A00E8C672 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		E29B03212316D52A00E8C672 /* InvokeVideoCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvokeVideoCallViewController.h; sourceTree = "<group>"; };
@@ -150,8 +154,6 @@
 		E3017E081859BEA7004222F3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E3017E0A1859BEB3004222F3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		E3017E0C1859BEBD004222F3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		E30321E919F79B4200D92E52 /* DialerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialerViewController.h; sourceTree = "<group>"; };
-		E30321EA19F79B4200D92E52 /* DialerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DialerViewController.mm; sourceTree = "<group>"; };
 		E30CBDB61860279C008FB1F4 /* PickerViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewTableViewCell.h; sourceTree = "<group>"; };
 		E30CBDB71860279C008FB1F4 /* PickerViewTableViewCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PickerViewTableViewCell.mm; sourceTree = "<group>"; };
 		E30CBDBA1860279C008FB1F4 /* TextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldTableViewCell.h; sourceTree = "<group>"; };
@@ -303,6 +305,9 @@
 				E29B03232316D52A00E8C672 /* MakeCallQueueView.h */,
 				E29B03282316D52A00E8C672 /* MakeCallQueueView.mm */,
 				E29B032E2316D52A00E8C672 /* MakeCallViewController.h */,
+				E25D4DD12317C2F400FCEAAD /* ContractViewController.h */,
+				E25D4DD22317C2F400FCEAAD /* ContractViewController.m */,
+				E25D4DD32317C2F400FCEAAD /* ContractViewController.xib */,
 				E29B03252316D52A00E8C672 /* MakeCallViewController.mm */,
 				E29B032D2316D52A00E8C672 /* MakeCallWaitingView.h */,
 				E29B03262316D52A00E8C672 /* MakeCallWaitingView.mm */,
@@ -366,12 +371,12 @@
 		E35D62DE1859B9E10043F1D7 = {
 			isa = PBXGroup;
 			children = (
-				E35D63191859BA290043F1D7 /* Reference */,
+				E35D62E91859B9E10043F1D7 /* Frameworks */,
 				E35D62F01859B9E10043F1D7 /* MBVoIPSample */,
 				E35D63091859B9E10043F1D7 /* MBVoIPSampleTests */,
-				E35D62E91859B9E10043F1D7 /* Frameworks */,
-				E35D62E81859B9E10043F1D7 /* Products */,
 				C1E0F13AE2E69907134ABBD5 /* Pods */,
+				E35D62E81859B9E10043F1D7 /* Products */,
+				E35D63191859BA290043F1D7 /* Reference */,
 			);
 			sourceTree = "<group>";
 		};
@@ -418,8 +423,6 @@
 				E29B03362316D52B00E8C672 /* Category */,
 				E29B03392316D52B00E8C672 /* Common.h */,
 				E29B03302316D52B00E8C672 /* Controller */,
-				E30321E919F79B4200D92E52 /* DialerViewController.h */,
-				E30321EA19F79B4200D92E52 /* DialerViewController.mm */,
 				E35D62FC1859B9E10043F1D7 /* Images.xcassets */,
 				E29B031D2316D52A00E8C672 /* Model */,
 				E3CC4A3D1B04759900C47236 /* Reachability */,
@@ -626,6 +629,7 @@
 				A0E7FFB11C75BD4700C6C5C2 /* call_mute_off_button@2x.png in Resources */,
 				E39918C9185EB5AD00C70499 /* Storyboard_iPhone.storyboard in Resources */,
 				E35D62FD1859B9E10043F1D7 /* Images.xcassets in Resources */,
+				E25D4DD52317C2F400FCEAAD /* ContractViewController.xib in Resources */,
 				A0E7FFA71C75BD0400C6C5C2 /* call_camera_back_button@2x.png in Resources */,
 				E29B03422316D52B00E8C672 /* InvokeVideoCallViewController.xib in Resources */,
 				A0E7FFB31C75BD4700C6C5C2 /* call_mute_on_button@2x.png in Resources */,
@@ -690,7 +694,6 @@
 				E29B03432316D52B00E8C672 /* VoipHTTPHelper.m in Sources */,
 				E394080B1861925A00146891 /* MediaEngineWrapperSetting.mm in Sources */,
 				E30CBDC51860279C008FB1F4 /* TextFieldTableViewCell.mm in Sources */,
-				E30321EB19F79B4200D92E52 /* DialerViewController.mm in Sources */,
 				E29B033A2316D52B00E8C672 /* User.mm in Sources */,
 				E29B033D2316D52B00E8C672 /* MakeCallWaitingView.mm in Sources */,
 				E29B033F2316D52B00E8C672 /* MakeCallQueueView.mm in Sources */,
@@ -705,6 +708,7 @@
 				E35E339A19F78C4400B26063 /* MBMediaEngineManager.mm in Sources */,
 				E39B6CAA19FF7641001BA353 /* AppDelegate+MBVoIP.mm in Sources */,
 				E394080A1861925A00146891 /* MediaEngineWrapperLog.mm in Sources */,
+				E25D4DD42317C2F400FCEAAD /* ContractViewController.m in Sources */,
 				A00028CF1CC764E500B585E3 /* AudioConferenceViewController.mm in Sources */,
 				E320C05519D3B9EC008E9248 /* MBVideoOutDevice.mm in Sources */,
 				E39408071861925A00146891 /* MBClientAppEvent.mm in Sources */,
