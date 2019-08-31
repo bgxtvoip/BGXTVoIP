@@ -169,7 +169,7 @@
         completion(NO);
         return;
     }
-    [VoipHTTPHelper sendHTTPRequest:[NSString stringWithFormat:@"http://192.168.10.239:9000/api/v1/video/queueinfo/%ld",self.roomId] method:VHTTPMethodGet parameters:nil success:^(id  _Nullable responseObject) {
+    [VoipHTTPHelper sendHTTPRequest:[NSString stringWithFormat:@"http://192.168.10.239:9000/api/v1/video/queueinfo/%ld",(long)self.roomId] method:VHTTPMethodGet parameters:nil success:^(id  _Nullable responseObject) {
         @try {
             if (responseObject && [responseObject isKindOfClass:[NSDictionary class]]) {
                 NSDictionary *res = (NSDictionary *)responseObject;
@@ -178,9 +178,10 @@
                     long status = [((NSNumber *)statusCode) longValue];
                     if (status == 0) {
                         NSDictionary *queueinfo = [res objectForKey:@"queueinfo"];
-                        self.roomId = [[queueinfo objectForKey:@"roomId"] integerValue];
-                        self.queuePosition = [[queueinfo objectForKey:@"queueNum"] integerValue];                                                
-                        
+                        if (![self objectIsNull:queueinfo]) {
+                            self.roomId = [[queueinfo objectForKey:@"roomId"] integerValue];
+                            self.queuePosition = [[queueinfo objectForKey:@"queueNum"] integerValue];
+                        }
                         completion(YES);
                     }else{
                         completion(NO);
@@ -236,5 +237,13 @@
     [userDefaults setValue:value forKey:key];
     
     return [userDefaults synchronize];
+}
+
+- (BOOL)objectIsNull:(NSObject *)obj{
+    if ([obj isKindOfClass:[NSNull class]] || [obj isEqual:[NSNull null]] || obj == nil) {
+        return YES;//
+    }else {
+        return NO;
+    }
 }
 @end

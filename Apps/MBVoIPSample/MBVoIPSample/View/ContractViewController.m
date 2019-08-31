@@ -34,7 +34,7 @@
 
 - (void)setButtonShadow:(UIButton *)button{
     button.layer.shadowColor = BUTTON_GRAY_SHADOW_COLOR;
-    button.layer.shadowOffset = CGSizeMake(0, <#CGFloat height#>)
+    button.layer.shadowOffset = CGSizeMake(0, 1);
 }
 /*
 #pragma mark - Navigation

@@ -16,6 +16,6 @@
 
 #define BUTTON_GRAY_COLOR [UIColor colorWithRed:175.f/255.f green:175.f/255.f blue:175.f/255.f alpha:1.f]
 
-#define BUTTON_GRAY_SHADOW_COLOR [UIColor colorWithRed:0 green:0 blue:0 alpha:.8f];
+#define BUTTON_GRAY_SHADOW_COLOR [UIColor colorWithRed:0 green:0 blue:0 alpha:.8f].CGColor;
 #endif /* Common_h */
 
